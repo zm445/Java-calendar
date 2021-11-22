@@ -14,17 +14,15 @@ public class Calendar {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Calendar cal = new Calendar();
-		System.out.printf("반복할 횟수를 입력하세요. \n");
+		System.out.printf("반복할 횟수를 입력하세요: ");
 		int repeat = scanner.nextInt();
 		
-		int j = 0;
-		while(j < repeat) {			
-			System.out.printf("달을 입력하세요. \n");
-			int month = scanner.nextInt();
-			
+		for(int i=0; i<repeat; i++) {
+			System.out.printf("달을 입력하세요: ");
+			int month = scanner.nextInt();			
 			System.out.printf("%d월은 %d일까지 있습니다. \n", month, cal.getMaxOfDay(month));
-			j++;
-		}
+		}	
+		System.out.println("Bye~");
 		scanner.close();
 	}
 }
