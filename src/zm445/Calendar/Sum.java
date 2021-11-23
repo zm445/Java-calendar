@@ -17,6 +17,6 @@ public class Sum {
 		int total = first + second;
 		
 		System.out.println("두 수의 합은 " + total + "입니다.");
-		
+		scan.close();
 	}
 } 
